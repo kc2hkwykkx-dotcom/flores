@@ -1,0 +1,78 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2026-06-21T00:53:21.446+03:00  INFO 8320 --- [           main] com.flowershop.FlowerShopApplication     : Starting FlowerShopApplication v0.0.1-SNAPSHOT using Java 17.0.19 with PID 8320 (D:\MyProjects\flores\flores\build\libs\flores-0.0.1-SNAPSHOT.jar started by Alina in D:\MyProjects\flores\flores)
+2026-06-21T00:53:21.458+03:00  INFO 8320 --- [           main] com.flowershop.FlowerShopApplication     : No active profile set, falling back to 1 default profile: "default"
+2026-06-21T00:53:23.895+03:00  INFO 8320 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-06-21T00:53:23.906+03:00  INFO 8320 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-21T00:53:24.191+03:00  INFO 8320 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 258 ms. Found 4 JPA repository interfaces.
+2026-06-21T00:53:24.243+03:00  INFO 8320 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-06-21T00:53:24.246+03:00  INFO 8320 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-06-21T00:53:24.270+03:00  INFO 8320 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flowershop.repositories.AdminRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-06-21T00:53:24.271+03:00  INFO 8320 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flowershop.repositories.FlowerRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-06-21T00:53:24.272+03:00  INFO 8320 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flowershop.repositories.OrderRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-06-21T00:53:24.273+03:00  INFO 8320 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.flowershop.repositories.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2026-06-21T00:53:24.273+03:00  INFO 8320 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2026-06-21T00:53:25.918+03:00  INFO 8320 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-21T00:53:25.981+03:00  INFO 8320 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-21T00:53:25.982+03:00  INFO 8320 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2026-06-21T00:53:26.220+03:00  INFO 8320 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-21T00:53:26.223+03:00  INFO 8320 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4655 ms
+2026-06-21T00:53:26.929+03:00  INFO 8320 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-21T00:53:27.216+03:00  INFO 8320 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2026-06-21T00:53:27.410+03:00  INFO 8320 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-21T00:53:27.894+03:00  INFO 8320 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-21T00:53:27.958+03:00  INFO 8320 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-21T00:53:28.220+03:00  INFO 8320 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:flower_shop user=SA
+2026-06-21T00:53:28.230+03:00  INFO 8320 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-21T00:53:28.315+03:00  INFO 8320 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-21T00:53:29.727+03:00  INFO 8320 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists admins cascade 
+Hibernate: drop table if exists flowers cascade 
+Hibernate: drop table if exists orders cascade 
+Hibernate: drop table if exists users cascade 
+Hibernate: create table admins (id bigint generated by default as identity, username varchar(50) not null, email varchar(100), password varchar(255) not null, primary key (id))
+Hibernate: create table flowers (is_active boolean default true, price float(53), quantity integer, id bigint generated by default as identity, description varchar(255), name varchar(255), primary key (id))
+Hibernate: create table orders (quantity integer not null, total_price numeric(10,2) not null, id bigint generated by default as identity, order_date timestamp(6), user_id bigint not null, flower_name varchar(100) not null, status enum ('CANCELLED','DELIVERED','NEW','PROCESSING') not null, primary key (id))
+Hibernate: create table users (id bigint generated by default as identity, phone varchar(20), first_name varchar(50) not null, last_name varchar(50), email varchar(100) unique, password varchar(255) not null, role enum ('ADMIN','USER'), primary key (id))
+Hibernate: alter table if exists orders add constraint FK32ql8ubntj5uh44ph9659tiih foreign key (user_id) references users
+2026-06-21T00:53:29.819+03:00  INFO 8320 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-21T00:53:31.792+03:00  WARN 8320 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-21T00:53:34.988+03:00  INFO 8320 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:flower_shop'
+2026-06-21T00:53:35.359+03:00  INFO 8320 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-06-21T00:53:35.418+03:00  INFO 8320 --- [           main] com.flowershop.FlowerShopApplication     : Started FlowerShopApplication in 15.051 seconds (process running for 16.301)
+2026-06-21T00:53:35.980+03:00  INFO 8320 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-21T00:53:35.987+03:00  INFO 8320 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-06-21T00:53:35.989+03:00  INFO 8320 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+Hibernate: select f1_0.id,f1_0.description,f1_0.is_active,f1_0.name,f1_0.price,f1_0.quantity from flowers f1_0
+Hibernate: insert into flowers (description,is_active,name,price,quantity,id) values (?,?,?,?,?,default)
+Hibernate: select u1_0.id,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.phone,u1_0.role from users u1_0
+Hibernate: select o1_0.id,o1_0.flower_name,o1_0.order_date,o1_0.quantity,o1_0.status,o1_0.total_price,o1_0.user_id from orders o1_0
+Hibernate: select u1_0.id,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.phone,u1_0.role from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.phone,u1_0.role from users u1_0 where u1_0.id=?
+Hibernate: select u1_0.id,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.phone,u1_0.role from users u1_0
+Hibernate: insert into flowers (description,is_active,name,price,quantity,id) values (?,?,?,?,?,default)
+Hibernate: select f1_0.id,f1_0.description,f1_0.is_active,f1_0.name,f1_0.price,f1_0.quantity from flowers f1_0 where f1_0.id=?
+Hibernate: update flowers set description=?,is_active=?,name=?,price=?,quantity=? where id=?
+Hibernate: select f1_0.id,f1_0.description,f1_0.is_active,f1_0.name,f1_0.price,f1_0.quantity from flowers f1_0 where f1_0.id=?
+Hibernate: update flowers set description=?,is_active=?,name=?,price=?,quantity=? where id=?
+Hibernate: select o1_0.id,o1_0.flower_name,o1_0.order_date,o1_0.quantity,o1_0.status,o1_0.total_price,o1_0.user_id,u1_0.id,u1_0.email,u1_0.first_name,u1_0.last_name,u1_0.password,u1_0.phone,u1_0.role from orders o1_0 join users u1_0 on u1_0.id=o1_0.user_id where o1_0.id=?
+Hibernate: update orders set flower_name=?,order_date=?,quantity=?,status=?,total_price=?,user_id=? where id=?
+Hibernate: select f1_0.id,f1_0.description,f1_0.is_active,f1_0.name,f1_0.price,f1_0.quantity from flowers f1_0 where f1_0.id=?
+Hibernate: update flowers set description=?,is_active=?,name=?,price=?,quantity=? where id=?
+Hibernate: select f1_0.id,f1_0.description,f1_0.is_active,f1_0.name,f1_0.price,f1_0.quantity from flowers f1_0 where f1_0.id=?
+Hibernate: delete from flowers where id=?
