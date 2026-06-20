@@ -1,13 +1,12 @@
-package com.impact.flores;
+package com.flowershop;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class FloresApplicationTests {
+class FlowerShopApplicationTests {
 
 	@Test
 	void contextLoads() {
 	}
-
 }

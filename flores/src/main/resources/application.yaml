@@ -1,3 +1,10 @@
 spring:
-  application:
-    name: flores
+  datasource:
+    url: jdbc:postgresql://localhost:5432/flower_shop
+    username: postgres
+    password: 1234
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
